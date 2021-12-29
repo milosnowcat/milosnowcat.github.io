@@ -19,7 +19,7 @@ jobs:
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://www.rahcode.com/
+        base-url-path: https://rahcode.com/
 
     - name: Output stats
       run: |
