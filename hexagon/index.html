@@ -6,12 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://dev.rahcode.com/hexagon">
     <title>hexagon</title>
 </head>
 <body>
     <h1>hexagon</h1>
     <a href="https://dev.rahcode.com/hexagon">Click here</a>
+
+    <script>
+        if (window.confirm("Warning! the page you are about to visit is under development, it is possible that if it is updated your information will not be saved")) {
+            window.location.href = "https://dev.rahcode.com/hexagon";
+        }else{
+            window.location.href = "https://rahcode.com";
+        }
+    </script>
 
     <center>
         Developed by Ramiro Alvarez Hernández
