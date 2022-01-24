@@ -1,0 +1,15 @@
+# REDIRECT
+    # crane.ino
+    Redirect 301 /crane.ino/ https://github.com/miloalvarez9809/crane.ino#readme
+
+    # counter.ino
+    Redirect 301 /counter.ino/ https://github.com/miloalvarez9809/counter.ino#readme
+
+    # hexagon
+    Redirect 301 /hexagon/ https://dev.rahcode.com/hexagon
+
+    # inventory.php
+    Redirect 301 /inventory.php/ https://github.com/miloalvarez9809/inventory.php#readme
+
+    # good-idea
+    Redirect 301 /good-idea/ https://goodidea-rahcode.herokuapp.com
