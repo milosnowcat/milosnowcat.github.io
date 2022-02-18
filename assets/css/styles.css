@@ -838,11 +838,6 @@ img {
   bottom: 0;
 }
 
-/* No */
-.testimonial {
-  display: none;
-}
-
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
