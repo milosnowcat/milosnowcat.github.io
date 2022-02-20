@@ -199,3 +199,128 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Notifications
+function welcomeNotification() {
+  const notification = new Notification('Welcome to RAH Code', {
+    body: 'Hello, welcome to RAH Code, thanks for accepting the notifications',
+    icon: 'assets/img/favicon/android-chrome-512x512.png',
+  })
+
+  notification.onclick = (e) => {
+    window.location.href = '/'
+  }
+}
+
+if (document.cookie == '') {
+  var now = new Date()
+  var time = now.getTime()
+  var expireTime = time + 24 * 60 * 60 * 1000
+  now.setTime(expireTime)
+
+  function showNotification() {
+    const notification = new Notification('Hello again', {
+      body: 'Welcome back',
+      icon: 'assets/img/favicon/android-chrome-512x512.png',
+    })
+    document.cookie =
+      'notification1=yes; expires=' + now.toUTCString() + '; path=/;'
+  }
+} else {
+  let notNum = Math.floor(Math.random() * 8 + 1)
+
+  if (notNum == 1) {
+    function showNotification() {
+      const notification = new Notification('Hexagon', {
+        body: 'An app to find job',
+        icon: 'assets/img/favicon/android-chrome-512x512.png',
+      })
+
+      notification.onclick = (e) => {
+        window.location.href = 'https://www.rahcode.com/hexagon'
+      }
+    }
+  } else if (notNum == 2) {
+    function showNotification() {
+      const notification = new Notification('Good Idea', {
+        body: 'Arte y Diseño en Sublimación',
+        icon: 'assets/img/favicon/android-chrome-512x512.png',
+      })
+
+      notification.onclick = (e) => {
+        window.location.href = 'https://www.rahcode.com/good-idea'
+      }
+    }
+  } else if (notNum == 3) {
+    function showNotification() {
+      const notification = new Notification('Blog', {
+        body: 'My blog',
+        icon: 'assets/img/favicon/android-chrome-512x512.png',
+      })
+
+      notification.onclick = (e) => {
+        window.location.href = 'https://blog.rahcode.com'
+      }
+    }
+  } else if (notNum == 4) {
+    // function showNotification() {
+    //   const notification = new Notification('', {
+    //     body: '',
+    //     icon: 'assets/img/favicon/android-chrome-512x512.png',
+    //   })
+    //   notification.onclick = (e) => {
+    //     window.location.href = ''
+    //   }
+    // }
+  } else if (notNum == 5) {
+    // function showNotification() {
+    //   const notification = new Notification('', {
+    //     body: '',
+    //     icon: 'assets/img/favicon/android-chrome-512x512.png',
+    //   })
+    //   notification.onclick = (e) => {
+    //     window.location.href = ''
+    //   }
+    // }
+  } else if (notNum == 6) {
+    // function showNotification() {
+    //   const notification = new Notification('', {
+    //     body: '',
+    //     icon: 'assets/img/favicon/android-chrome-512x512.png',
+    //   })
+    //   notification.onclick = (e) => {
+    //     window.location.href = ''
+    //   }
+    // }
+  } else if (notNum == 7) {
+    // function showNotification() {
+    //   const notification = new Notification('', {
+    //     body: '',
+    //     icon: 'assets/img/favicon/android-chrome-512x512.png',
+    //   })
+    //   notification.onclick = (e) => {
+    //     window.location.href = ''
+    //   }
+    // }
+  } else if (notNum == 8) {
+    // function showNotification() {
+    //   const notification = new Notification('', {
+    //     body: '',
+    //     icon: 'assets/img/favicon/android-chrome-512x512.png',
+    //   })
+    //   notification.onclick = (e) => {
+    //     window.location.href = ''
+    //   }
+    // }
+  }
+}
+
+if (Notification.permission === 'granted') {
+  showNotification()
+} else if (Notification.permission !== 'denied') {
+  Notification.requestPermission().then((permission) => {
+    if (permission === 'granted') {
+      welcomeNotification()
+    }
+  })
+}
