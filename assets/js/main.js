@@ -216,8 +216,8 @@ if (domain.includes(rahcode)) {
   page = 'Good Idea'
   names = 'RAH Code'
 } else {
-  page = "App"
-  names = "RAH Code"
+  page = 'App'
+  names = 'RAH Code'
 }
 
 footer.innerHTML =
@@ -225,4 +225,6 @@ footer.innerHTML =
   page +
   '</h1><span class="footer__subtitle">by ' +
   names +
-  '</span></div><ul class="footer__links"><li><a href="#services" class="footer__link">Services</a></li><li><a href="#portfolio" class="footer__link">Portfolio</a></li><li><a href="#contact" class="footer__link">Contactme</a></li></ul><div class="footer__socials"><a href="https://www.facebook.com" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a></div></div><p class="footer__copy">&#169; RAH Code. All right reserved</p></div>'
+  '</span></div><ul class="footer__links"><li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li><li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li><li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
+  '<div class="footer__socials"><a href="https://www.facebook.com" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a></div></div>' +
+  '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>'
