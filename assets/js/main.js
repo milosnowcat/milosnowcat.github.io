@@ -206,7 +206,7 @@ page = ''
 names = ''
 
 domain = location.href
-rahcode = 'https://rahcode.com'
+rahcode = 'https://www.rahcode.com'
 goodidea = 'https://good-idea.rahcode.com'
 
 if (domain.includes(rahcode)) {
