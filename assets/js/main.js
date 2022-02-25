@@ -214,10 +214,10 @@ if (domain.includes(rahcode)) {
   names = 'Ramiro Alvarez'
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
-  names = 'RAH Code 🏳️‍🌈'
+  names = 'RAH Code'
 } else {
   page = 'App'
-  names = 'RAH Code 🏳️‍🌈'
+  names = 'RAH Code'
 }
 
 footer.innerHTML =
