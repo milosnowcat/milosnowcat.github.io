@@ -94,6 +94,7 @@ modalCloses.forEach((modalClose) => {
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.portfolio__container', {
   cssMode: true,
+  loop: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -107,6 +108,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
+  loop: true,
   grabCursor: true,
   spaceBetween: 48,
 
