@@ -206,18 +206,18 @@ page = ''
 names = ''
 
 domain = location.href
-rahcode = 'https://www.rahcode.com'
-goodidea = 'https://good-idea.rahcode.com'
+rahcode = 'www'
+goodidea = 'good-idea'
 
 if (domain.includes(rahcode)) {
-  page = 'RAH Code'
+  page = 'RAH Code 🏳️‍🌈'
   names = 'Ramiro Alvarez'
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
-  names = 'RAH Code'
+  names = 'RAH Code 🏳️‍🌈'
 } else {
   page = 'App'
-  names = 'RAH Code'
+  names = 'RAH Code 🏳️‍🌈'
 }
 
 footer.innerHTML =
