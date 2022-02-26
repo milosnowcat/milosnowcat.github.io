@@ -208,19 +208,19 @@ page = ''
 names = ''
 link = ''
 
-domain = location.href.includes
+domain = location.href
 rahcode = 'www'
 goodidea = 'good-idea'
 hexagon = 'hexagon'
 
-if (domain(rahcode)) {
+if (domain.includes(rahcode)) {
   page = 'RAH Code 🏳️‍🌈'
   names = 'Ramiro Alvarez'
-} else if (domain(goodidea)) {
+} else if (domain.includes(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
   link = '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
-} else if (domain(hexagon)) {
+} else if (domain.includes(hexagon)) {
   page = 'Hexagon'
   names = 'RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
   link = '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
