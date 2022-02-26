@@ -222,7 +222,7 @@ if (domain.includes(rahcode)) {
   link = '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
 } else if (domain.includes(hexagon)) {
   page = 'Hexagon'
-  names = 'RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
+  names = '<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
   link = '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
 } else {
   page = 'App'
