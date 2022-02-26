@@ -206,17 +206,24 @@ themeButton.addEventListener('click', () => {
 var footer = document.getElementById('foot')
 page = ''
 names = ''
+link = ''
 
-domain = location.href
+domain = location.href.includes
 rahcode = 'www'
 goodidea = 'good-idea'
+hexagon = 'hexagon'
 
-if (domain.includes(rahcode)) {
+if (domain(rahcode)) {
   page = 'RAH Code 🏳️‍🌈'
   names = 'Ramiro Alvarez'
-} else if (domain.includes(goodidea)) {
+} else if (domain(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
+  link = '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
+} else if (domain(hexagon)) {
+  page = 'Hexagon'
+  names = 'RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
+  link = '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
 } else {
   page = 'App'
   names = 'RAH Code'
@@ -228,5 +235,7 @@ footer.innerHTML =
   '</h1><span class="footer__subtitle">by ' +
   names +
   '</span></div><ul class="footer__links"><li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li><li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li><li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
-  '<div class="footer__socials"><a href="https://www.facebook.com" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a></div></div>' +
+  '<div class="footer__socials"><a href="https://www.facebook.com" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
+  link +
+  '</div></div>' +
   '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>'
