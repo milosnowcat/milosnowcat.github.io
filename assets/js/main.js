@@ -214,8 +214,9 @@ goodidea = 'good-idea'
 hexagon = 'hexagon'
 
 if (domain.includes(rahcode)) {
-  page = 'RAH Code 🏳️‍🌈'
+  page = 'RAH Code'
   names = 'Ramiro Alvarez'
+  link = '<a class="footer__social">🏳️‍🌈</a>'
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
