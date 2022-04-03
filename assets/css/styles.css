@@ -505,29 +505,6 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 80%;
-}
-.skills__css {
-  width: 60%;
-}
-.skills__js {
-  width: 70%;
-}
-
-.skills__php {
-  width: 80%;
-}
-.skills__node {
-  width: 60%;
-}
-.skills__sql {
-  width: 70%;
-}
-.skills__python {
-  width: 65%;
-}
-
 .skills__close .skills__list {
   height: 0;
   overflow: hidden;
@@ -720,7 +697,7 @@ img {
 
 .portfolio__img {
   width: 265px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   justify-self: center;
 }
 

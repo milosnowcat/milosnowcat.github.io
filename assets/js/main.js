@@ -221,15 +221,19 @@ if (domain.includes(rahcode)) {
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
-  link = '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
+  link =
+    '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
 } else if (domain.includes(hexagon)) {
   page = 'Hexagon'
-  names = '<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
-  link = '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
+  names =
+    '<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
+  link =
+    '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
 } else if (domain.includes(inventoryphp)) {
   page = 'Inventoy.php'
   names = 'RAH Code'
-  link = '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>'
+  link =
+    '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>'
 } else {
   page = 'App'
   names = 'RAH Code'
