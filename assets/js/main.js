@@ -215,9 +215,9 @@ hexagon = 'hexagon.rahcode.com'
 inventoryphp = 'inventoryphp.rahcode.com'
 
 if (domain.includes(rahcode)) {
-  page = 'RAH Code 🏳️‍🌈'
+  page = 'RAH Code'
   names = 'Ramiro Alvarez'
-  // link = '<a href="https://www.rahcode.com/gay" class="footer__social">🏳️‍🌈</a>'
+  link = '<a class="footer__social">🏳️‍🌈</a>'
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
@@ -245,7 +245,7 @@ footer.innerHTML =
   '</h1><span class="footer__subtitle">by ' +
   names +
   '</span></div><ul class="footer__links"><li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li><li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li><li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
-  '<div class="footer__socials"><a href="https://www.facebook.com/milo.alvarez.9809" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com/milo.alvarez.9809" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com/miloalvarez9809" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a><a href="https://www.rahcode.com/gay" class="footer__social">🏳️‍🌈</a>' +
+  '<div class="footer__socials"><a href="https://www.facebook.com/milo.alvarez.9809" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com/milo.alvarez.9809" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com/miloalvarez9809" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
   link +
   '</div></div>' +
   '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>'
