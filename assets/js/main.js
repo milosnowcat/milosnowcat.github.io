@@ -217,7 +217,7 @@ inventoryphp = 'inventoryphp.rahcode.com'
 if (domain.includes(rahcode)) {
   page = 'RAH Code'
   names = 'Ramiro Alvarez'
-  link = '<a class="footer__social">🏳️‍🌈</a>'
+  link = '<a href="/pride" class="footer__social">🏳️‍🌈</a>'
 } else if (domain.includes(goodidea)) {
   page = 'Good Idea'
   names = 'RAH Code'
