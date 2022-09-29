@@ -213,6 +213,7 @@ rahcode = 'www.rahcode.com'
 goodidea = 'good-idea.rahcode.com'
 hexagon = 'hexagon.rahcode.com'
 inventoryphp = 'inventoryphp.rahcode.com'
+expolitec = 'expolitec.rahcode.com'
 
 if (domain.includes(rahcode)) {
   page = 'RAH Code'
@@ -222,7 +223,7 @@ if (domain.includes(rahcode)) {
   page = 'Good Idea'
   names = 'RAH Code'
   link =
-    '<a href="https://goodidea-rahcode.herokuapp.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
+    '<a href="https://db.good-idea.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
 } else if (domain.includes(hexagon)) {
   page = 'Hexagon'
   names =
@@ -234,6 +235,9 @@ if (domain.includes(rahcode)) {
   names = 'RAH Code'
   link =
     '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>'
+} else if (domain.includes(expolitec)) {
+  page = 'Expolitec'
+  names = '<br>RAMIRO ALVAREZ HERNANDEZ<br>ADRIEL BIGVAI ANDRADE BORRAYO<br>NESTOR EMMANUEL ASCENCIO SANCHEZ<br>HANAEL MARTINEZ MURILLO<br>'
 } else {
   page = 'App'
   names = 'RAH Code'
