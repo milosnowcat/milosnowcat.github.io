@@ -1,0 +1,13 @@
+{
+    "name": "RAH Code",
+    "short_name":  "RAH",
+    "start_url": ".",
+    "background_color": "#b6c1fc",
+    "theme_color": "#576ee0",
+    "display": "standalone",
+    "icons": [
+        {
+            
+        }
+    ]
+}
