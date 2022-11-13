@@ -1,119 +1,119 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById("nav-menu"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu')
-  })
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
 }
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if (navClose) {
-  navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu')
-  })
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
-  const navMenu = document.getElementById('nav-menu')
+  const navMenu = document.getElementById("nav-menu");
   // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove('show-menu')
+  navMenu.classList.remove("show-menu");
 }
-navLink.forEach((n) => n.addEventListener('click', linkAction))
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-  skillsHeader = document.querySelectorAll('.skills__header')
+const skillsContent = document.getElementsByClassName("skills__content"),
+  skillsHeader = document.querySelectorAll(".skills__header");
 
 function toogleSkills() {
-  let itemClass = this.parentNode.className
+  let itemClass = this.parentNode.className;
 
   for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = 'skills__content skills__close'
+    skillsContent[i].className = "skills__content skills__close";
   }
-  if (itemClass === 'skills__content skills__close') {
-    this.parentNode.className = 'skills__content skills__open'
+  if (itemClass === "skills__content skills__close") {
+    this.parentNode.className = "skills__content skills__open";
   }
 }
 
 skillsHeader.forEach((el) => {
-  el.addEventListener('click', toogleSkills)
-})
+  el.addEventListener("click", toogleSkills);
+});
 
 /*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]'),
-  tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
 
 tabs.forEach((tab) => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.target)
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach((tabContent) => {
-      tabContent.classList.remove('qualification__active')
-    })
-    target.classList.add('qualification__active')
+      tabContent.classList.remove("qualification__active");
+    });
+    target.classList.add("qualification__active");
 
     tabs.forEach((tab) => {
-      tab.classList.remove('qualification__active')
-    })
-    tab.classList.add('qualification__active')
-  })
-})
+      tab.classList.remove("qualification__active");
+    });
+    tab.classList.add("qualification__active");
+  });
+});
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-  modalBtns = document.querySelectorAll('.services__button'),
-  modalCloses = document.querySelectorAll('.services__modal-close')
+const modalViews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalCloses = document.querySelectorAll(".services__modal-close");
 
 let modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active-modal')
-}
+  modalViews[modalClick].classList.add("active-modal");
+};
 
 modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener('click', () => {
-    modal(i)
-  })
-})
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
 
 modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener('click', () => {
+  modalClose.addEventListener("click", () => {
     modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal')
-    })
-  })
-})
+      modalView.classList.remove("active-modal");
+    });
+  });
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
+let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-})
+});
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
+let swiperTestimonial = new Swiper(".testimonial__container", {
   loop: true,
   grabCursor: true,
   spaceBetween: 48,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
@@ -122,125 +122,126 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
       slidesPerView: 2,
     },
   },
-})
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-  const scrollY = window.pageYOffset
+  const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight
-    const sectionTop = current.offsetTop - 50
-    sectionId = current.getAttribute('id')
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector('.nav__menu a[href*=' + sectionId + ']')
-        .classList.add('active-link')
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
       document
-        .querySelector('.nav__menu a[href*=' + sectionId + ']')
-        .classList.remove('active-link')
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
-  })
+  });
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener("scroll", scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
-  const nav = document.getElementById('header')
+  const nav = document.getElementById("header");
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 80) nav.classList.add('scroll-header')
-  else nav.classList.remove('scroll-header')
+  if (this.scrollY >= 80) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
 }
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener("scroll", scrollHeader);
 
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
-  const scrollUp = document.getElementById('scroll-up')
+  const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-up class
-  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll')
-  else scrollUp.classList.remove('show-scroll')
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener("scroll", scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
 
 // Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
-    darkTheme,
-  )
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](
-    iconTheme,
-  )
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
 }
 
 // Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
+themeButton.addEventListener("click", () => {
   // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme)
-  themeButton.classList.toggle(iconTheme)
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
   // We save the theme and the current icon that the user chose
-  localStorage.setItem('selected-theme', getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
-})
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
 
 // Footer
-var footer = document.getElementById('foot')
-page = ''
-names = ''
-link = ''
+var footer = document.getElementById("foot");
+page = "";
+names = "";
+link = "";
 
-domain = location.href
-rahcode = 'www.rahcode.com'
-goodidea = 'good-idea.rahcode.com'
-hexagon = 'hexagon.rahcode.com'
-inventoryphp = 'inventoryphp.rahcode.com'
-expolitec = 'expolitec.rahcode.com'
+domain = location.href;
+rahcode = "www.rahcode.com";
+goodidea = "good-idea.rahcode.com";
+hexagon = "hexagon.rahcode.com";
+inventoryphp = "inventoryphp.rahcode.com";
+expolitec = "expolitec.rahcode.com";
 
 if (domain.includes(rahcode)) {
-  page = 'RAH Code'
-  names = 'Ramiro Alvarez'
-  link = '<a href="/pride" class="footer__social">🏳️‍🌈</a>'
+  page = "RAH Code";
+  names = "Ramiro Alvarez";
+  link = '<a href="/pride" class="footer__social">🏳️‍🌈</a>';
 } else if (domain.includes(goodidea)) {
-  page = 'Good Idea'
-  names = 'RAH Code'
+  page = "Good Idea";
+  names = "RAH Code";
   link =
-    '<a href="https://db.good-idea.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>'
+    '<a href="https://db.good-idea.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-signin"></i></a>';
 } else if (domain.includes(hexagon)) {
-  page = 'Hexagon'
+  page = "Hexagon";
   names =
-    '<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>'
+    "<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>";
   link =
-    '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>'
+    '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>';
 } else if (domain.includes(inventoryphp)) {
-  page = 'Inventoy.php'
-  names = 'RAH Code'
+  page = "Inventoy.php";
+  names = "RAH Code";
   link =
-    '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>'
+    '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>';
 } else if (domain.includes(expolitec)) {
-  page = 'Expolitec'
-  names = '<br>RAMIRO ALVAREZ HERNANDEZ<br>ADRIEL BIGVAI ANDRADE BORRAYO<br>NESTOR EMMANUEL ASCENCIO SANCHEZ<br>HANAEL MARTINEZ MURILLO<br>'
+  page = "Expolitec";
+  names =
+    "<br>RAMIRO ALVAREZ HERNANDEZ<br>ADRIEL BIGVAI ANDRADE BORRAYO<br>NESTOR EMMANUEL ASCENCIO SANCHEZ<br>HANAEL MARTINEZ MURILLO<br>";
 } else {
-  page = 'App'
-  names = 'RAH Code'
+  page = "App";
+  names = "RAH Code";
 }
 
 footer.innerHTML =
@@ -248,8 +249,18 @@ footer.innerHTML =
   page +
   '</h1><span class="footer__subtitle">by ' +
   names +
-  '</span></div><ul class="footer__links"><li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li><li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li><li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
-  '<div class="footer__socials"><a href="https://www.facebook.com/milo.alvarez.9809" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a><a href="https://www.instagram.com/milo.alvarez.9809" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a><a href="https://twitter.com/miloalvarez9809" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
+  '</span></div><ul class="footer__links">' +
+  '<li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li>' +
+  '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
+  '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
+  '<div class="footer__socials">' +
+  '<a href="https://git.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
+  '<a href="https://blog.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
+  '<a href="https://www.facebook.com/rah.code.dev" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a>' +
+  '<a href="https://www.instagram.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>' +
+  '<a href="https://twitter.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
+  '<a href="https://www.youtube.com/@rah_code" target="_blank" class="footer__social"><i class="uil uil-youtube"></i></a>' +
   link +
-  '</div></div>' +
-  '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>'
+  "</div></div>" +
+  '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>';
