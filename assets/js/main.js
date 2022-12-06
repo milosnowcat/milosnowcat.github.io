@@ -214,6 +214,7 @@ goodidea = "good-idea.rahcode.com";
 hexagon = "hexagon.rahcode.com";
 inventoryphp = "inventoryphp.rahcode.com";
 expolitec = "expolitec.rahcode.com";
+inventoryjava = "inventoryjava.rahcode.com";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
@@ -239,6 +240,11 @@ if (domain.includes(rahcode)) {
   page = "Expolitec";
   names =
     "<br>RAMIRO ALVAREZ HERNANDEZ<br>ADRIEL BIGVAI ANDRADE BORRAYO<br>NESTOR EMMANUEL ASCENCIO SANCHEZ<br>HANAEL MARTINEZ MURILLO<br>";
+} else if (domain.includes(inventoryjava)) {
+  page = "Inventoy.java";
+  names = "RAH Code";
+  link =
+    '<a href="https://git.rahcode.com/inventory.java" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>';
 } else {
   page = "App";
   names = "RAH Code";
