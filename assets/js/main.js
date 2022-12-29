@@ -38,7 +38,7 @@ const skillsContent = document.getElementsByClassName("skills__content"),
 function toogleSkills() {
   let itemClass = this.parentNode.className;
 
-  for (i = 0; i < skillsContent.length; i++) {
+  for (var i = 0; i < skillsContent.length; i++) {
     skillsContent[i].className = "skills__content skills__close";
   }
   if (itemClass === "skills__content skills__close") {
@@ -133,8 +133,8 @@ function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 50;
     var sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -220,7 +220,8 @@ var footer = document.getElementById("foot"),
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "Ramiro Alvarez";
-  link = '<a href="/seasons" class="footer__social">' + sIcon() + "</a>";
+  link =
+    '<a href="/seasons" class="footer__social">' + seasons.start() + "</a>";
 } else if (domain.includes(goodidea)) {
   page = "Good Idea";
   names = "RAH Code";
@@ -271,5 +272,3 @@ footer.innerHTML =
   link +
   "</div></div>" +
   '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>';
-
-seasons.start();
