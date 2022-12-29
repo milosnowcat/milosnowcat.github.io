@@ -135,7 +135,7 @@ function scrollActive() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    var sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
@@ -205,20 +205,17 @@ themeButton.addEventListener("click", () => {
 });
 
 // Footer
-var footer = document.getElementById("foot");
-page = "";
-names = "";
-link = "";
-
-domain = location.href;
-rahcode = "www.rahcode.com";
-goodidea = "good-idea.rahcode.com";
-hexagon = "hexagon.rahcode.com";
-inventoryphp = "inventoryphp.rahcode.com";
-expolitec = "expolitec.rahcode.com";
-inventoryjava = "inventoryjava.rahcode.com";
-
-domain = rahcode;
+var footer = document.getElementById("foot"),
+  page = "",
+  names = "",
+  link = "",
+  domain = location.href,
+  rahcode = "www.rahcode.com",
+  goodidea = "good-idea.rahcode.com",
+  hexagon = "hexagon.rahcode.com",
+  inventoryphp = "inventoryphp.rahcode.com",
+  expolitec = "expolitec.rahcode.com",
+  inventoryjava = "inventoryjava.rahcode.com";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
