@@ -221,7 +221,7 @@ if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "Ramiro Alvarez";
   link =
-    '<a href="/seasons" class="footer__social">' + seasons.start() + "</a>";
+    '<a href="/seasons" class="footer__social">' + sIcon + "</a>";
 } else if (domain.includes(goodidea)) {
   page = "Good Idea";
   names = "RAH Code";
@@ -272,3 +272,5 @@ footer.innerHTML =
   link +
   "</div></div>" +
   '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>';
+
+  var sIcon=seasons.start();
