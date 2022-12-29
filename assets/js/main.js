@@ -1,3 +1,5 @@
+import * as seasons from "https://seasons.rahcode.com/seasons.js";
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -216,10 +218,12 @@ inventoryphp = "inventoryphp.rahcode.com";
 expolitec = "expolitec.rahcode.com";
 inventoryjava = "inventoryjava.rahcode.com";
 
+domain = rahcode;
+
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "Ramiro Alvarez";
-  link = '<a href="/pride" class="footer__social">🏳️‍🌈</a>';
+  link = '<a href="/seasons" class="footer__social">' + sIcon() + "</a>";
 } else if (domain.includes(goodidea)) {
   page = "Good Idea";
   names = "RAH Code";
@@ -270,3 +274,5 @@ footer.innerHTML =
   link +
   "</div></div>" +
   '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>';
+
+seasons.start();

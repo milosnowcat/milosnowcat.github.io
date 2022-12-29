@@ -1,5 +1,8 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* SEASONS */
+@import "https://seasons.rahcode.com/seasons.css";
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -24,7 +27,7 @@
   --scroll-thumb-color: hsl(VAR(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -139,9 +142,11 @@ img {
   height: auto;
 }
 
-button, input[type="submit"], input[type="reset"] {
-	font: inherit;
-	cursor: pointer;
+button,
+input[type="submit"],
+input[type="reset"] {
+  font: inherit;
+  cursor: pointer;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -722,7 +727,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .swiper-portfolio-icon {
