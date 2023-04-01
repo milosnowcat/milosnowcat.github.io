@@ -214,8 +214,8 @@ var footer = document.getElementById("foot"),
   goodidea = "good-idea.rahcode.com",
   hexagon = "hexagon.rahcode.com",
   inventoryphp = "inventoryphp.rahcode.com",
-  expolitec = "expolitec.rahcode.com",
   inventoryjava = "inventoryjava.rahcode.com";
+  demeterx = "demeterx.rahcode.com"
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
@@ -237,15 +237,17 @@ if (domain.includes(rahcode)) {
   names = "RAH Code";
   link =
     '<a href="https://git.rahcode.com/inventory.php" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>';
-} else if (domain.includes(expolitec)) {
-  page = "Expolitec";
-  names =
-    "<br>RAMIRO ALVAREZ HERNANDEZ<br>ADRIEL BIGVAI ANDRADE BORRAYO<br>NESTOR EMMANUEL ASCENCIO SANCHEZ<br>HANAEL MARTINEZ MURILLO<br>";
 } else if (domain.includes(inventoryjava)) {
   page = "Inventoy.java";
   names = "RAH Code";
   link =
     '<a href="https://git.rahcode.com/inventory.java" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>';
+} else if (domain.includes(demeterx)) {
+  page = "Demeter_X";
+  names =
+    "<br>RAMIRO ALVAREZ HERNANDEZ<br>SONIA MARISOL ISABEL AMEZCUA ALMARAZ<br>HANAEL MARTINEZ MURILLO<br>JUAN CARLOS NAVARRO HIGAREDA<br>CRISTOPHER ALI SANCHEZ FERNANDEZ<br>";
+  link =
+    '<a href="https://dev.rahcode.com/demeterx" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>';
 } else {
   page = "App";
   names = "RAH Code";
