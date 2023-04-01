@@ -214,8 +214,8 @@ var footer = document.getElementById("foot"),
   goodidea = "good-idea.rahcode.com",
   hexagon = "hexagon.rahcode.com",
   inventoryphp = "inventoryphp.rahcode.com",
-  inventoryjava = "inventoryjava.rahcode.com";
-  demeterx = "demeterx.rahcode.com"
+  inventoryjava = "inventoryjava.rahcode.com",
+  demeterx = "demeterx.rahcode.com";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
