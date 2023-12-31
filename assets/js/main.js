@@ -209,28 +209,18 @@ var footer = document.getElementById("foot"),
   link = "",
   domain = location.href,
   rahcode = "www.rahcode.com",
-  goodidea = "good-idea.rahcode.com",
-  hexagon = "hexagon.rahcode.com",
-  inventoryphp = "inventoryphp.rahcode.com",
-  inventoryjava = "inventoryjava.rahcode.com",
-  demeterx = "demeterx.rahcode.com";
+  github = "milosnowcat.github.io";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "Ramiro Alvarez";
-  link = '<a href="/seasons" class="footer__social">📅</a>';
-} else if (domain.includes(hexagon)) {
-  page = "Hexagon";
+  link = '<a href="https://milosnowcat.github.io" class="footer__social">Mirror</a>';
+} else if (domain.includes(github)) {
+  page = "Mirror from";
   names =
-    "<br>RAMIRO ALVAREZ HERNANDEZ<br>CRISTOFER VLADIMIR LARA ALEJO<br>JUAN CARLOS NAVARRO HIGADERA<br>ISAAC ESAU VEGA REYNAGA<br>SEBASTIAN ZUÑIGA BEJARANO<br>";
+    "www.rahcode.com";
   link =
-    '<a href="https://dev.rahcode.com/hexagon" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>';
-} else if (domain.includes(demeterx)) {
-  page = "Demeter_X";
-  names =
-    "<br>RAMIRO ALVAREZ HERNANDEZ<br>SONIA MARISOL ISABEL AMEZCUA ALMARAZ<br>HANAEL MARTINEZ MURILLO<br>JUAN CARLOS NAVARRO HIGAREDA<br>CRISTOPHER ALI SANCHEZ FERNANDEZ<br>";
-  link =
-    '<a href="https://dev.rahcode.com/demeterx" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>';
+    '<a href="https://www.rahcode.com" target="_blank" class="footer__social">Mirror</a>';
 } else {
   page = "App";
   names = "RAH Code";
@@ -242,13 +232,13 @@ footer.innerHTML =
   '</h1><span class="footer__subtitle">by ' +
   names +
   '</span></div><ul class="footer__links">' +
-  '<li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li>' +
-  '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
-  '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
+  '<li><a href="https://milosnowcat.github.io/#services" class="footer__link">Services</a></li>' +
+  '<li><a href="https://milosnowcat.github.io/#portfolio" class="footer__link">Portfolio</a></li>' +
+  '<li><a href="https://milosnowcat.github.io/#contact" class="footer__link">Contactme</a></li></ul>' +
   '<div class="footer__socials">' +
-  '<a href="https://git.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
-  '<a href="https://blog.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
-  '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
+  '<a href="https://github.com/milosnowcat" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
+  '<a href="https://rahcode.blogspot.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://rah-code-dev.github.io" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
   '<a href="https://www.facebook.com/rah.code.dev" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a>' +
   '<a href="https://www.instagram.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>' +
   '<a href="https://twitter.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
