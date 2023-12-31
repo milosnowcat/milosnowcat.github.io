@@ -216,7 +216,7 @@ if (domain.includes(rahcode)) {
   names = "Ramiro Alvarez";
   link = '<a href="https://milosnowcat.github.io" class="footer__social">Mirror</a>';
 } else if (domain.includes(github)) {
-  page = "Mirror from";
+  page = "Mirror";
   names =
     "www.rahcode.com";
   link =
