@@ -209,7 +209,8 @@ var footer = document.getElementById("foot"),
   link = "",
   domain = location.href,
   rahcode = "www.rahcode.com",
-  github = "milosnowcat.github.io";
+  github = "milosnowcat.github.io",
+  onion = "avlea5jha73avumpppp3pxrb63a5hyi5pr3h3bqhhjt75amkgzrweqqd.onion";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
@@ -221,6 +222,12 @@ if (domain.includes(rahcode)) {
     "www.rahcode.com";
   link =
     '<a href="https://www.rahcode.com" target="_blank" class="footer__social">Mirror</a>';
+} else if (domain.includes(onion)) {
+  page = "☠️☠️☠️";
+  names =
+    "tacwonsolim";
+  link =
+    'ᓚᘏᗢ';
 } else {
   page = "App";
   names = "RAH Code";
