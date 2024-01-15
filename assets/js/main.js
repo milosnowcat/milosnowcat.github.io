@@ -245,6 +245,6 @@ footer.innerHTML =
   '<a href="https://www.youtube.com/@rah_code" target="_blank" class="footer__social"><i class="uil uil-youtube"></i></a>' +
   link +
   "</div></div>" +
-  '<p class="footer__copy">&#169; RAH Code. All right reserved</p></div>';
+  '<p class="footer__copy">Theme by @Bedimcode</p></div>';
 
 seasons.start();
