@@ -246,5 +246,3 @@ footer.innerHTML =
   link +
   "</div></div>" +
   '<p class="footer__copy">Theme by @Bedimcode</p></div>';
-
-seasons.start();
