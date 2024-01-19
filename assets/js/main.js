@@ -236,9 +236,9 @@ footer.innerHTML =
   '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
   '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
   '<div class="footer__socials">' +
-  '<a href="https://github.com/milosnowcat" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
-  '<a href="https://rahcode.blogspot.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
-  '<a href="https://rah-code-dev.github.io" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
+  '<a href="https://git.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
+  '<a href="https://blog.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
   '<a href="https://www.facebook.com/rah.code.dev" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a>' +
   '<a href="https://www.instagram.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>' +
   '<a href="https://twitter.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
