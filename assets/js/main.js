@@ -213,7 +213,7 @@ var footer = document.getElementById("foot"),
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
-  names = "Ramiro Alvarez";
+  names = "milosnowcat";
   link = '<a href="https://milosnowcat.github.io" class="footer__social">Mirror</a>';
 } else if (domain.includes(github)) {
   page = "Mirror";
@@ -232,9 +232,9 @@ footer.innerHTML =
   '</h1><span class="footer__subtitle">by ' +
   names +
   '</span></div><ul class="footer__links">' +
-  '<li><a href="https://milosnowcat.github.io/#services" class="footer__link">Services</a></li>' +
-  '<li><a href="https://milosnowcat.github.io/#portfolio" class="footer__link">Portfolio</a></li>' +
-  '<li><a href="https://milosnowcat.github.io/#contact" class="footer__link">Contactme</a></li></ul>' +
+  '<li><a href="https://www.rahcode.com/#services" class="footer__link">Services</a></li>' +
+  '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
+  '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
   '<div class="footer__socials">' +
   '<a href="https://github.com/milosnowcat" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
   '<a href="https://rahcode.blogspot.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
