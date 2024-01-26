@@ -214,11 +214,11 @@ var footer = document.getElementById("foot"),
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "milosnowcat";
-  link = '<a href="https://milosnowcat.github.io" class="footer__social"><i class="uil uil-code-branch"></i></a>';
+  link =
+    '<a href="https://milosnowcat.github.io" class="footer__social"><i class="uil uil-code-branch"></i></a>';
 } else if (domain.includes(github)) {
   page = "Mirror";
-  names =
-    "www.rahcode.com";
+  names = "www.rahcode.com";
   link =
     '<a href="https://www.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-code-branch"></i></a>';
 } else {
