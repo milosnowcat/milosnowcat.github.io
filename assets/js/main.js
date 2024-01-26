@@ -214,13 +214,13 @@ var footer = document.getElementById("foot"),
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "milosnowcat";
-  link = '<a href="https://milosnowcat.github.io" class="footer__social">Mirror</a>';
+  link = '<a href="https://milosnowcat.github.io" class="footer__social"><i class="uil uil-code-branch"></i></a>';
 } else if (domain.includes(github)) {
   page = "Mirror";
   names =
     "www.rahcode.com";
   link =
-    '<a href="https://www.rahcode.com" target="_blank" class="footer__social">Mirror</a>';
+    '<a href="https://www.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-code-branch"></i></a>';
 } else {
   page = "App";
   names = "RAH Code";
@@ -238,11 +238,11 @@ footer.innerHTML =
   '<div class="footer__socials">' +
   '<a href="https://git.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
   '<a href="https://blog.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://git.rahcode.com/dev" target="_blank" class="footer__social"><i class="uil uil-github"></i></a>' +
   '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
-  '<a href="https://www.facebook.com/rah.code.dev" target="_blank" class="footer__social" ><i class="uil uil-facebook-f"></i></a>' +
-  '<a href="https://www.instagram.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-instagram"></i></a>' +
+  '<a href="https://gitlab.rahcode.com/milo" target="_blank" class="footer__social"><i class="uil uil-gitlab"></i></a>' +
+  '<a href="https://cloud.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-cloud"></i></a>' +
   '<a href="https://twitter.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
-  '<a href="https://www.youtube.com/@rah_code" target="_blank" class="footer__social"><i class="uil uil-youtube"></i></a>' +
   link +
   "</div></div>" +
   '<p class="footer__copy">Theme by @Bedimcode</p></div>';
