@@ -358,6 +358,11 @@
         <changefreq>always</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://demeter.rahcode.com</loc>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+    </url>
 
     <!-- redirects -->
     <url>
