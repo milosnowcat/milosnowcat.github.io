@@ -203,7 +203,7 @@ themeButton.addEventListener("click", () => {
 });
 
 // Footer
-var footer = document.getElementById("foot"),
+let footer = document.getElementById("foot"),
   page = "",
   names = "",
   link = "",
