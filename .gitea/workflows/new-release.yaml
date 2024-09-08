@@ -12,7 +12,7 @@ jobs:
       - name: Cloning repo
         run: |
           echo "${{ secrets.GATEWAY }} gitea.rahcode.com" | sudo tee -a /etc/hosts
-          git clone --branch deploy http://milo:${{ secrets.TOKEN }}@gitea.rahcode.com/milo/milosnowcat.github.io.git .
+          git clone --branch onion http://milo:${{ secrets.TOKEN }}@gitea.rahcode.com/milo/milosnowcat.github.io.git .
 
 
       - name: Set up SSH
