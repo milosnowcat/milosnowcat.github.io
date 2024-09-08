@@ -1,0 +1,37 @@
+name: "deploy"
+
+on:
+  push:
+    branches:
+      - onion
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Cloning repo
+        run: |
+          echo "${{ secrets.GATEWAY }} gitea.rahcode.com" | sudo tee -a /etc/hosts
+          git clone --branch deploy http://milo:${{ secrets.TOKEN }}@gitea.rahcode.com/milo/milosnowcat.github.io.git .
+
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo ".ssh dir created"
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "SSH_PRIVATE_KEY copied to .ssh"
+          chmod 600 ~/.ssh/id_rsa
+          echo "chmod"
+          ssh-keyscan -p 2222 ${{ secrets.GATEWAY }} > ~/.ssh/known_hosts
+          echo "Host Key copied"
+
+      - name: Add remote
+        run: |
+          git remote add dokku [dokku@${{ secrets.GATEWAY }}:2222]:bloc-wor-fish
+          git config --global user.email "git@rahcode.com"
+          git config --global user.name "Gitea Actions"
+
+      - name: Push to dokku repository
+        run: |
+          git push dokku --force
