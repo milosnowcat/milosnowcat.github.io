@@ -242,7 +242,6 @@ footer.innerHTML =
   '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
   '<a href="https://gitlab.rahcode.com/milo" target="_blank" class="footer__social"><i class="uil uil-gitlab"></i></a>' +
   '<a href="https://cloud.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-cloud"></i></a>' +
-  '<a href="https://twitter.com/rah_code" target="_blank" class="footer__social"><i class="uil uil-twitter-alt"></i></a>' +
   link +
   "</div></div>" +
   '<p class="footer__copy">Theme by @Bedimcode</p></div>';
