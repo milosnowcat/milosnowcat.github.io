@@ -208,15 +208,15 @@ let footer = document.getElementById("foot"),
   names = "",
   link = "",
   domain = location.href,
-  rahcode = "www.rahcode.com",
-  linode = "www.rahcode.net";
+  github = "www.rahcode.com",
+  dokku = "www.rahcode.net";
 
-if (domain.includes(rahcode)) {
+if (domain.includes(github)) {
   page = "RAH Code";
   names = "milosnowcat";
   link =
     '<a href="https://www.rahcode.net" class="footer__social"><i class="uil uil-code-branch"></i></a>';
-} else if (domain.includes(github)) {
+} else if (domain.includes(dokku)) {
   page = ".net";
   names = "www.rahcode.com";
   link =
