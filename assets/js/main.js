@@ -209,15 +209,15 @@ let footer = document.getElementById("foot"),
   link = "",
   domain = location.href,
   rahcode = "www.rahcode.com",
-  github = "milosnowcat.github.io";
+  linode = "www.rahcode.net";
 
 if (domain.includes(rahcode)) {
   page = "RAH Code";
   names = "milosnowcat";
   link =
-    '<a href="https://milosnowcat.github.io" class="footer__social"><i class="uil uil-code-branch"></i></a>';
+    '<a href="https://www.rahcode.net" class="footer__social"><i class="uil uil-code-branch"></i></a>';
 } else if (domain.includes(github)) {
-  page = "Mirror";
+  page = ".net";
   names = "www.rahcode.com";
   link =
     '<a href="https://www.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-code-branch"></i></a>';
@@ -236,12 +236,10 @@ footer.innerHTML =
   '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
   '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
   '<div class="footer__socials">' +
-  '<a href="https://git.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
-  '<a href="https://blog.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
-  '<a href="https://git.rahcode.com/dev" target="_blank" class="footer__social"><i class="uil uil-github"></i></a>' +
+  '<a href="https://github.com/milosnowcat" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
+  '<a href="https://rahcode.blogspot.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://github.com/rah-code-dev" target="_blank" class="footer__social"><i class="uil uil-github"></i></a>' +
   '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
-  '<a href="https://gitlab.rahcode.com/milo" target="_blank" class="footer__social"><i class="uil uil-gitlab"></i></a>' +
-  '<a href="https://cloud.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-cloud"></i></a>' +
   link +
   "</div></div>" +
   '<p class="footer__copy">Theme by @Bedimcode</p></div>';
