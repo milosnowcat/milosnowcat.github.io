@@ -236,10 +236,14 @@ footer.innerHTML =
   '<li><a href="https://www.rahcode.com/#portfolio" class="footer__link">Portfolio</a></li>' +
   '<li><a href="https://www.rahcode.com/#contact" class="footer__link">Contactme</a></li></ul>' +
   '<div class="footer__socials">' +
-  '<a href="https://github.com/milosnowcat" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
-  '<a href="https://rahcode.blogspot.com" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
-  '<a href="https://github.com/rah-code-dev" target="_blank" class="footer__social"><i class="uil uil-github"></i></a>' +
-  '<a href="https://dev.rahcode.com" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
+  '<a href="https://milo.nz/git" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>' +
+  '<a href="https://milo.nz/blog" target="_blank" class="footer__social"><i class="uil uil-blogger-alt"></i></a>' +
+  '<a href="https://milo.nz/git-dev" target="_blank" class="footer__social"><i class="uil uil-github"></i></a>' +
+  '<a href="https://milo.nz/dev" target="_blank" class="footer__social"><i class="uil uil-arrow"></i></a>' +
+  '<a href="https://milo.nz/donate" target="_blank" class="footer__social"><i class="uil uil-paypal"></i></a>' +
   link +
   "</div></div>" +
-  '<p class="footer__copy">Theme by @Bedimcode</p></div>';
+  '<p class="footer__copy">Theme by @Bedimcode' +
+  "<br /><br />BTC: bc1q50p8jkervtd87mdva5wyzdqlkaa7yhyaqmtsgr" +
+  "<br />ETH: 0xf20bD1780e58E2Fa041B356072484aaffdbe29b8" +
+  "<br />SOL: Hj85iJkmt2gmMFPeXt61iXy6WmmrEgHtYC3h4Um3rRGG</p></div>";
