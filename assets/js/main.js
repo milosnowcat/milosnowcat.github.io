@@ -215,7 +215,8 @@ if (domain.includes(github)) {
   page = "RAH Code";
   names = "milosnowcat";
   link =
-    '<a href="https://www.rahcode.net" class="footer__social"><i class="uil uil-code-branch"></i></a>';
+    '<a href="https://www.rahcode.net" class="footer__social"><i class="uil uil-code-branch"></i></a>' +
+    '<a href="https://milom7l4moizgjtmv35wqhmk2ljlc6d3eowzhe4w6upnvjge4eer6fad.onion/" class="footer__social"><i class="uil uil-spin"></i></a>';
 } else if (domain.includes(dokku)) {
   page = ".net";
   names = "www.rahcode.com";
