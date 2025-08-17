@@ -1,3 +1,5 @@
+// https://mikeflynn.github.io/egg.js/
+
 export default function Egg() {
   (this.eggs = []),
     (this.hooks = []),
@@ -87,8 +89,9 @@ export default function Egg() {
 
 // EGGS
 const eggsHtml =
-  '<audio id="eggOmori" src="https://milosnowcat.github.io/assets/audio/omori.ogg"></audio>' +
-  '<audio id="eggMeow" src="https://milosnowcat.github.io/assets/audio/meow.ogg"></audio>';
+  '<audio id="eggOmori" src="https://www.rahcode.com/assets/audio/omori.ogg"></audio>' +
+  '<audio id="eggMeow" src="https://www.rahcode.com/assets/audio/meow.ogg"></audio>' +
+  '<audio id="eggCiao" src="https://www.rahcode.com/assets/audio/bella_ciao.ogg"></audio>';
 
 document.body.innerHTML += eggsHtml;
 
@@ -103,5 +106,18 @@ egg
 egg
   .addCode("m,e,o,w", function () {
     document.getElementById("eggMeow").play();
+  })
+  .listen();
+
+// Pracchia-78 at Italian Wikipedia, Public domain, via Wikimedia Commons
+egg
+  .addCode("c,i,a,o", function () {
+    document.getElementById("eggCiao").play();
+  })
+  .addCode("b,e,l,l,a", function () {
+    document.getElementById("eggCiao").play();
+  })
+  .addCode("a,n,t,i,f,a", function () {
+    document.getElementById("eggCiao").play();
   })
   .listen();
