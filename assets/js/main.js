@@ -245,6 +245,9 @@ footer.innerHTML =
   link +
   "</div></div>" +
   '<p class="footer__copy">Theme by @Bedimcode' +
-  "<br /><br />BTC:<br />bc1q50p8jkervtd87mdva5wyzdqlkaa7yhyaqmtsgr" +
-  "<br /><br />ETH:<br />0xf20bD1780e58E2Fa041B356072484aaffdbe29b8" +
-  "<br /><br />SOL:<br />Hj85iJkmt2gmMFPeXt61iXy6WmmrEgHtYC3h4Um3rRGG</p></div>";
+  "<br /><br />BTC:<br />bc1qxs40h64pf2hndpfryyswst9n5u97gx6hzlc990" +
+  "<br /><br />ETH:<br />0x4D77EC19d5CdA7177F66745373ea48F9490beB33" +
+  "<br /><br />SOL:<br />HcKshxxhKefMuWyBzU5cc6eLr1ZaqmHNWhjwKQvi4Jhq" +
+  "<br /><br />POL:<br />0x4D77EC19d5CdA7177F66745373ea48F9490beB33" +
+  "<br /><br />LTC:<br />ltc1q5vj4ekvnuzjcj6c2td609y9uwfksm3k0yjf5r8" +
+  "</p></div>";
