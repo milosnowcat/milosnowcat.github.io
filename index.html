@@ -1485,16 +1485,28 @@
             </div>
           </div>
 
-          <iframe
-            title="Contact form"
-            width="640"
-            height="480"
-            src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAADOX0LNUOUdIUDA1SFdVWDZFS0JQVzM5U0Q2M0ZWNC4u&embed=true"
-            style="border: none; max-width: 100%; max-height: 100vh"
-            allowfullscreen
-            loading="lazy"
+          <div
+            data-heyform-id="rtdnlHkM"
+            data-heyform-type="modal"
+            data-heyform-custom-url="https://form.rahcode.com/form/"
+            data-heyform-size="large"
+            data-heyform-open-trigger="click"
+            data-heyform-open-delay="5"
+            data-heyform-open-scroll-percent="30"
+            data-heyform-trigger-background="#1d4ed8"
+            data-heyform-trigger-text="Open Form"
+            data-heyform-hide-after-submit="true"
+            data-heyform-auto-close="5"
           >
-          </iframe>
+            <button
+              class="heyform__trigger-button"
+              type="button"
+              onclick="HeyForm.openModal('rtdnlHkM')"
+            >
+              Open Form
+            </button>
+          </div>
+          <script src="https://www.unpkg.com/@heyform-inc/embed@latest/dist/index.umd.js"></script>
         </div>
       </section>
     </main>
@@ -1515,23 +1527,5 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="/assets/js/main.js" type="module" defer></script>
-
-    <script>
-      (function (d, t) {
-        var BASE_URL = "https://help.rahcode.com";
-        var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        g.src = BASE_URL + "/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
-        g.onload = function () {
-          window.chatwootSDK.run({
-            websiteToken: "egtHpd1tbScyqHsEvkSmYxCg",
-            baseUrl: BASE_URL,
-          });
-        };
-      })(document, "script");
-    </script>
   </body>
 </html>
